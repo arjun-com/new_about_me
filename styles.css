@@ -29,11 +29,31 @@ h1 {
     z-index: 1;
 }
 
-#logo {
+.sticky-top-right {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+#github {
     padding: 12px;
     width: 40px;
     background-color: pink    ;
     border-bottom-right-radius: 20px;
+    transition: 0.3s;
+}
+
+#contact {
+    color: black;
+    font-size: 30px;
+    padding: 12px;
+    width: 100px;
+    background-color: pink    ;
+    border-bottom-left-radius: 20px;
+    transition: 0.3s;
+    text-decoration: none;
 }
 
 div {
@@ -42,17 +62,93 @@ div {
 
 #welc_desc {
     font-family: "smooch sans";
-    font-size: 27px;
+    font-size: 24px;
     font-weight: 300;
+    margin-bottom: 60px;
 }
 
+#github:hover {
+    width: 45px;
+    padding: 15px;
+}
 
+#contact:hover {
+    font-size: 33px;
+    padding: 15px; 
+}
+
+#discord {
+    position: relative;
+    top: 3px;
+    width: 25px;
+    font-family: "smooch sans";
+}
+
+.contact-div h2 {
+    font-weight: 300;
+    font-size: 50px;
+    font-family: "smooch sans";
+    text-decoration: 2px solid green line-;
+}
+
+.contact-div span {
+    border-bottom: 2px solid blueviolet;
+} 
+
+.contact-div p {
+    font-family: "smooch sans";
+    font-size: 28px;
+}
+
+#instagram {
+    position: relative;
+    top: 4px;
+    width: 20px;
+}
+
+#email {
+    position: relative;
+    top: 2px;
+    width: 20px;
+}
+
+hr {
+    margin: 40px 300px 40px 300px;
+}
+
+.footer {
+    margin-left: 15px;
+    font-size: 10px;
+    font-family: "raleway";
+    font-weight: 600;
+}
+
+.about_title {
+    font-family: "smooch sans"; 
+    font-weight: 100;
+    font-size: 37px;
+}
+
+.about_title > span {
+    border-bottom: 2px solid blueviolet;
+}
+
+.about_p {
+    font-family: "raleway";
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 55px;
+}
 
 @media all and (max-width: 1300px) {
-    #logo {
+    #github {
         width: 30px;
     }
 
+    #contact {
+        width: 70px;
+        font-size: 20px;
+    }
     
     #welc_header {
         margin-top: 80px;
@@ -61,5 +157,34 @@ div {
 
     div {
         margin: 0 60px;
+    }
+
+    .contact-div h2 {
+        font-size: 40px;
+    }
+    
+    .contact-div p {
+        font-size: 22px;
+    }
+
+    
+    hr {
+        margin: 25px 0;
+    }
+
+    #welc_desc {
+        font-size: 17px;
+        margin-bottom: 45px;
+    }
+
+    .footer {
+        font-size: 6px;
+        margin-bottom: 20px;
+    }
+
+    
+    .about_p {
+        font-size: 12px;
+        margin-bottom: 45px;
     }
 }
