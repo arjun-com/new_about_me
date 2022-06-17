@@ -39,3 +39,27 @@ h1 {
 div {
     margin: 0 90px;
 }
+
+#welc_desc {
+    font-family: "smooch sans";
+    font-size: 27px;
+    font-weight: 300;
+}
+
+
+
+@media all and (max-width: 1300px) {
+    #logo {
+        width: 30px;
+    }
+
+    
+    #welc_header {
+        margin-top: 80px;
+        font-size: 60px;
+    }
+
+    div {
+        margin: 0 60px;
+    }
+}
