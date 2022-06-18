@@ -7,7 +7,7 @@ async function char_loadin() {
     const elements = document.getElementsByClassName("welc_letter")
     for(var x = 0; x < elements.length; x++) {
         elements[x].style.borderLeft = "2px solid pink"
-        await sleep(500)
+        await sleep(270)
         elements[x].style.color = "blueviolet"
         elements[x].style.borderLeft = "0px solid red"
         console.log("done")
