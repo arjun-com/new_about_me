@@ -16,10 +16,13 @@ h1 {
     font-size: 90px;
 }
 
-.welc_word {
-    transition: 0.7s;
+.welc_letter {
     padding-bottom: 5px;
     font-weight: 300;
+    color: white;
+    transition-property: color;
+    transition-duration: 0.6s;
+    transition-timing-function: linear;
 }
 
 .sticky-top {
@@ -38,11 +41,33 @@ h1 {
 }
 
 #github {
-    padding: 12px;
-    width: 40px;
-    background-color: pink    ;
-    border-bottom-right-radius: 20px;
+    padding: 8px 12px 12px 8px;
+    width: 37px;
+    background-color: blueviolet;
+    border-bottom-right-radius: 8px;
     transition: 0.3s;
+}
+
+#msg {
+    margin: 20px 30px;
+    font-size: 20px;
+    font-family: "raleway";
+    font-weight: 900;
+    text-decoration: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: blueviolet;
+    border: 2px solid blueviolet;
+    padding: 10px 20px;
+    border-radius: 40px;
+    transition: 0.35s;
+}
+
+#msg:hover {
+    background-color: blueviolet;
+    color: white;
+    box-shadow: 0 0 17px blueviolet;
 }
 
 #contact {
@@ -57,14 +82,17 @@ h1 {
 }
 
 div {
-    margin: 0 90px;
+    margin: 0 0px;
+    padding: 25px;
 }
 
 #welc_desc {
+    transition: 0.8s;
     font-family: "smooch sans";
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 300;
     margin-bottom: 60px;
+    opacity: 0;
 }
 
 #github:hover {
@@ -75,6 +103,13 @@ div {
 #contact:hover {
     font-size: 33px;
     padding: 15px; 
+}
+
+#devices {
+    opacity: 0;
+    transition: 3s;
+    width: 400px;
+    margin-bottom: 100px;
 }
 
 #discord {
@@ -140,6 +175,26 @@ hr {
     margin-bottom: 55px;
 }
 
+.about-div {
+    background-color: blueviolet;
+}
+
+.about-div p {
+    font-size: 30px;
+    font-family: "smooch sans";
+    font-weight: 100;
+}
+
+.about-div h2 {
+    font-size: 55px;
+    font-family: "Oxygen";
+    font-weight: 1000;
+}
+
+.about-div span {
+    border-bottom: 2px solid black;
+}
+
 @media all and (max-width: 1300px) {
     #github {
         width: 30px;
@@ -156,7 +211,7 @@ hr {
     }
 
     div {
-        margin: 0 60px;
+        margin: 0 0px;
     }
 
     .contact-div h2 {
@@ -174,7 +229,7 @@ hr {
 
     #welc_desc {
         font-size: 17px;
-        margin-bottom: 45px;
+        margin: 0px 0 60px 0;
     }
 
     .footer {
@@ -186,5 +241,20 @@ hr {
     .about_p {
         font-size: 12px;
         margin-bottom: 45px;
+    }
+
+    #devices {
+        width: 300px;
+    }
+
+    #github:hover {
+        width: 37px;
+    }
+
+    #msg {
+        margin: 8px 8px 0 0;
+        font-size: 16px;
+        color: blueviolet;
+        padding: 6px 14px;
     }
 }
