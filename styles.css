@@ -7,19 +7,9 @@ body {
     margin: 0;
     font-family: "Parisienne";
     letter-spacing: 1px;
-
+    cursor: none;
     -ms-overflow-style: none; 
-    scrollbar-width: none;  
-}
-
-#trail {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;;
-    position: fixed;
-    transition: ease-in-out;
-    background-color: rgba(162, 223, 255, 0.318);
-    box-shadow: 0 0 20px rgba(0, 255, 255, 0.344);
+    scrollbar-width: none;
 }
 
 body::-webkit-scrollbar {
@@ -66,6 +56,21 @@ h1 {
     background-color: blueviolet;
     border-bottom-right-radius: 8px;
     transition: 0.3s;
+    cursor: none;
+    z-index: -1;
+}
+
+#github_href {
+    z-index: -1;
+}
+
+.skill-div {
+    display: inline-block;
+    background-color: blueviolet;
+    margin: 40px 20px;
+    width: 400px;
+    height: 600px;
+    border-radius: 30px;
 }
 
 #msg {
@@ -84,23 +89,13 @@ h1 {
     transition: 0.35s;
     opacity: 0;
     transition: 0.7s;
+    cursor: none;
 }
 
 #msg:hover {
     background-color: blueviolet;
     color: white;
     box-shadow: 0 0 17px blueviolet;
-}
-
-#contact {
-    color: black;
-    font-size: 30px;
-    padding: 12px;
-    width: 100px;
-    background-color: pink    ;
-    border-bottom-left-radius: 20px;
-    transition: 0.3s;
-    text-decoration: none;
 }
 
 div {
@@ -134,13 +129,6 @@ div {
     margin-bottom: 100px;
 }
 
-#discord {
-    position: relative;
-    top: 3px;
-    width: 25px;
-    font-family: "smooch sans";
-}
-
 .contact-div h2 {
     font-weight: 300;
     font-size: 50px;
@@ -155,18 +143,6 @@ div {
 .contact-div p {
     font-family: "smooch sans";
     font-size: 28px;
-}
-
-#instagram {
-    position: relative;
-    top: 4px;
-    width: 20px;
-}
-
-#email {
-    position: relative;
-    top: 2px;
-    width: 20px;
 }
 
 hr {
@@ -201,6 +177,18 @@ hr {
     background-color: blueviolet;
     opacity: 0;
     transition: 0.7s;
+    color: white;
+}
+
+#trail {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;;
+    position: fixed;
+    transition: ease-in-out;
+    background-color: rgba(0, 187, 255, 0.396);
+    box-shadow: 0 0 30px rgba(0, 187, 255, 0.603);
+    z-index: -100;
 }
 
 .about-div p {
@@ -218,11 +206,12 @@ hr {
 }
 
 .about-div span {
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid white;
 }
 
 #logo_p {
     width: 14px;
+    filter: invert(1);
 }
 
 @media all and (max-width: 1300px) {

@@ -6,10 +6,9 @@ async function char_loadin() {
     const elements = document.getElementsByClassName("welc_letter")
     for(var x = 0; x < elements.length; x++) {
         elements[x].style.borderLeft = "2px solid pink"
-        await sleep(270)
+        await sleep(70)
         elements[x].style.color = "blueviolet"
         elements[x].style.borderLeft = "0px solid red"
-        console.log("done")
     }
     await sleep(750)
     document.getElementById("welc_desc").style.opacity = 100
@@ -50,9 +49,8 @@ async function mouse_trail() {
     trail.setAttribute("id", "trail")
     document.body.appendChild(trail)
     document.addEventListener("mousemove", (details) => {
-        console.log(details)
-        trail.style.top = ( details.clientY + 5 ) + "px"
-        trail.style.left = ( details.clientX + 5 )+ "px"
+        trail.style.top = ( details.clientY - 30 ) + "px"
+        trail.style.left = ( details.clientX - 15 )+ "px"
     })
 }
 
@@ -64,3 +62,4 @@ loadin()
 
 tmp_underline()
 
+console.info("All setup.")
