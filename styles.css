@@ -7,7 +7,6 @@ body {
     margin: 0;
     font-family: "Parisienne";
     letter-spacing: 1px;
-    cursor: none;
     -ms-overflow-style: none; 
     scrollbar-width: none;
 }
@@ -56,12 +55,7 @@ h1 {
     background-color: blueviolet;
     border-bottom-right-radius: 8px;
     transition: 0.3s;
-    cursor: none;
-    z-index: -1;
-}
-
-#github_href {
-    z-index: -1;
+    z-index: 1;
 }
 
 .skill-div {
@@ -89,7 +83,6 @@ h1 {
     transition: 0.35s;
     opacity: 0;
     transition: 0.7s;
-    cursor: none;
 }
 
 #msg:hover {
@@ -178,6 +171,7 @@ hr {
     opacity: 0;
     transition: 0.7s;
     color: white;
+    z-index: -5;
 }
 
 #trail {
@@ -188,7 +182,7 @@ hr {
     transition: ease-in-out;
     background-color: rgba(0, 187, 255, 0.396);
     box-shadow: 0 0 30px rgba(0, 187, 255, 0.603);
-    z-index: -100;
+    z-index: 1;
 }
 
 .about-div p {

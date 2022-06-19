@@ -6,7 +6,7 @@ async function char_loadin() {
     const elements = document.getElementsByClassName("welc_letter")
     for(var x = 0; x < elements.length; x++) {
         elements[x].style.borderLeft = "2px solid pink"
-        await sleep(70)
+        await sleep(120)
         elements[x].style.color = "blueviolet"
         elements[x].style.borderLeft = "0px solid red"
     }
@@ -15,7 +15,7 @@ async function char_loadin() {
 }
 
 async function loadin() {
-    await sleep (5500)
+    await sleep (3000)
     document.getElementById("devices").style.opacity = 100
     for(var i = 0; i < (document.getElementsByClassName("about-div")).length; i++) {
         document.getElementsByClassName("about-div")[i].style.opacity = 100
@@ -24,7 +24,7 @@ async function loadin() {
 }
 
 async function tmp_underline() {
-    await sleep(10000)
+    await sleep(4000)
     var i = 0;
     const elements = document.getElementsByClassName("welc_word")
     while(true) {
@@ -45,12 +45,13 @@ async function tmp_underline() {
 }
 
 async function mouse_trail() {
+    // document.body.style.cursor = "none"
     const trail = document.createElement("p")
     trail.setAttribute("id", "trail")
     document.body.appendChild(trail)
     document.addEventListener("mousemove", (details) => {
-        trail.style.top = ( details.clientY - 30 ) + "px"
-        trail.style.left = ( details.clientX - 15 )+ "px"
+        trail.style.top = ( details.clientY - 5) + "px"
+        trail.style.left = ( details.clientX + 10 )+ "px"
     })
 }
 
