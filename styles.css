@@ -8,8 +8,18 @@ body {
     font-family: "Parisienne";
     letter-spacing: 1px;
 
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none; 
+    scrollbar-width: none;  
+}
+
+#trail {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;;
+    position: fixed;
+    transition: ease-in-out;
+    background-color: rgba(162, 223, 255, 0.318);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.344);
 }
 
 body::-webkit-scrollbar {
@@ -72,6 +82,8 @@ h1 {
     padding: 10px 20px;
     border-radius: 40px;
     transition: 0.35s;
+    opacity: 0;
+    transition: 0.7s;
 }
 
 #msg:hover {
@@ -187,6 +199,8 @@ hr {
 
 .about-div {
     background-color: blueviolet;
+    opacity: 0;
+    transition: 0.7s;
 }
 
 .about-div p {
@@ -202,14 +216,6 @@ hr {
     font-weight: 100;
     font-style: italic;
 }
-
-.trail { /* className for the trail elements */
-    position: absolute;
-    height: 1px;
-    width: 1px;
-    border-radius: 3px;
-    background: teal;
-  }
 
 .about-div span {
     border-bottom: 2px solid black;
