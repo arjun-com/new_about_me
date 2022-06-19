@@ -3,6 +3,7 @@ function sleep(ms) {
 }
 
 async function char_loadin() {
+    await sleep(700)
     const elements = document.getElementsByClassName("welc_letter")
     for(var x = 0; x < elements.length; x++) {
         elements[x].style.borderLeft = "2px solid pink"
@@ -15,7 +16,7 @@ async function char_loadin() {
 }
 
 async function loadin() {
-    await sleep (3000)
+    await sleep (4000)
     document.getElementById("devices").style.opacity = 100
     for(var i = 0; i < (document.getElementsByClassName("about-div")).length; i++) {
         document.getElementsByClassName("about-div")[i].style.opacity = 100
@@ -45,7 +46,6 @@ async function tmp_underline() {
 }
 
 async function mouse_trail() {
-    // document.body.style.cursor = "none"
     const trail = document.createElement("p")
     trail.setAttribute("id", "trail")
     document.body.appendChild(trail)
