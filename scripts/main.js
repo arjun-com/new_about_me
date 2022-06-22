@@ -63,4 +63,11 @@ loadin()
 
 tmp_underline()
 
+document.getElementById("discord").onclick = () => { alert("arjun_#9968") }
+
+document.getElementById("email").onclick = () => { 
+    alert("arjun.main@proton.me")
+    parent.location="mailto:arjun.main@protonmail.com" 
+}
+
 console.info("All setup.")
