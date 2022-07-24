@@ -23,6 +23,7 @@ h1 {
 #welc_header {
     margin-top: 120px;
     font-size: 90px;
+    overflow: hidden;
 }
 
 .welc_letter {
@@ -90,6 +91,17 @@ h1 {
 
 .skill-div li {
     margin: 15px 0;
+}
+
+#welc_div{
+    overflow: hidden;
+    width: 75%;
+}
+
+#underline {
+    margin-bottom: 80px;
+    margin-top: 60px;
+    margin-left: 9000px;
 }
 
 #msg {

@@ -24,27 +24,6 @@ async function loadin() {
     document.getElementById("msg").style.opacity = 100
 }
 
-async function tmp_underline() {
-    await sleep(4000)
-    var i = 0;
-    const elements = document.getElementsByClassName("welc_word")
-    while(true) {
-        for(var x = 0; x < elements.length; x++) {
-            if(x != i) {
-                elements[x].style.letterSpacing = "1px"
-                elements[x].style.color = "blueviolet"
-                elements[x].style.borderBottom = "black"
-            }
-        }
-        elements[i].style.letterSpacing = "1px"
-        elements[i].style.color = "darkslateblue"
-        elements[i].style.borderBottom = "1px solid darkslateblue"
-        await sleep(800)
-        i++
-        if(i == elements.length) i = 0
-    }
-}
-
 async function mouse_trail() {
     const trail = document.createElement("p")
     trail.setAttribute("id", "trail")
@@ -55,13 +34,27 @@ async function mouse_trail() {
     })
 }
 
+async function underline_wobbly() {
+    await sleep(2000)
+    document.getElementById("underline").style.transition = "3s"
+    document.getElementById("underline").style.marginLeft = "0"
+    document.getElementById("underline").style.marginRight = "0"
+    await sleep(3000)
+    for(var i = 0; i < 100000; i++) {
+        if(i % 2) document.getElementById("underline").style.transform = "rotate(4deg)"
+        else {
+            document.getElementById("underline").style.transform = "rotate(-4deg)"
+        }
+        await sleep(2000)
+    }
+    document.getElementById("underline").style.transform = "rotate(0deg)"
+}
+
 char_loadin()
 
 mouse_trail()
 
 loadin()
-
-tmp_underline()
 
 document.getElementById("discord").onclick = () => { alert("arjun_#9968") }
 
@@ -70,4 +63,4 @@ document.getElementById("email").onclick = () => {
     parent.location="mailto:arjun.main@protonmail.com" 
 }
 
-console.info("All setup.")
+underline_wobbly()
